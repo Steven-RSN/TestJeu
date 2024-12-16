@@ -1,0 +1,327 @@
+
+
+@font-face {
+    font-family: 'font';
+    src: url('font/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.fondu-noir {
+    position: fixed; /* Assure que la div reste en place */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000; /* Assure que la div est au-dessus de tout */
+    animation: fonduNoir 4s forwards; /* Animation de fondu au noir */
+}
+/* Définir l'animation de fondu au noir */
+@keyframes fonduNoir {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes fonduInverse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+body{
+    
+    height: 100vh;
+    background-image: url('fond/plainne-_1_ (1).jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+       
+ 
+}
+.divbody{
+    height: 58vh;
+    display: flex;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    
+}
+.wrap{
+    
+    background-image: url('fond/—Pngtree—border\ black\ ornate\ pattern_8286039.png');
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); 
+    background-size:100% 100% ;
+    background-position: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(216, 214, 192, 0.856);
+    border-radius: 8px;
+    min-height: 50%;
+    min-width: 56%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.597); 
+ 
+  
+    
+}
+
+.boutonX{
+    position: absolute;
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 0.3%;
+    right: 0;
+    top: 0;
+}
+
+.boutonX:hover{
+    background-color: rgb(141, 36, 36);
+
+}
+
+.boutonFleche,.boutonExecuter {
+    background-color: rgb(191, 179, 118);
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.315); 
+    border-radius: 4px;
+    margin: 1.2%;
+    font-size: 1.1vw;
+    padding: 1.2%;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+
+    
+}
+.boutonVoler {
+    background-color: rgb(191, 179, 118);
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.315); 
+    border-radius: 4px;
+    margin: 1.2%;
+    font-size: 1.1vw;
+    padding: 1.2%;
+
+    
+}
+.boutonEpargne {
+    background-color: rgb(191, 179, 118);
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.315); 
+    border-radius: 4px;
+    margin: 1.2%;
+    font-size: 1.1vw;
+    padding: 1.2%;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+
+    
+}
+.boutonAttaquer {
+    background-color: rgb(191, 179, 118);
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.315); 
+    border-radius: 4px;
+    margin: 1.2%;
+    font-size: 1.1vw;
+    padding: 1.2%;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+
+
+    
+}
+.boutonDialogue{
+    background-color: rgb(191, 179, 118);
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.315); 
+    border-radius: 4px;
+    margin: 1.2%;
+    font-size: 1.1vw;
+    padding: 1.2%;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+
+
+    
+}
+.boutonFleche:hover{
+    background-color: rgb(170, 160, 110);
+    border-radius: 5px;
+
+    
+}
+
+.encart{
+    
+
+    font-size: medium;
+    padding:1%;  
+    background-color: #ffffff7c;
+    position: absolute;
+    border: 2px solid rgb(6, 6, 6);
+    height: 70%;
+    width: 75%;
+    border-radius: 14px;  
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+   
+    
+}
+.div_pour_bouton{
+    border: 1px solid black;
+
+}
+.div_pour_text{
+    margin: 0.4%;
+    align-items: center;
+    font-size: 1.22vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    
+}
+text{
+    border: 1px solid black;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    
+}
+.portrait{
+    box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 0.538); 
+    background-image: url("personnage/Trappeur.png");
+    object-fit: contain;
+    background-size: cover;
+    background-position:center;
+    border: 3px solid rgb(55, 50, 50);
+    width: 250%;
+    max-width: 180px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 24px;
+    
+}
+.stick{
+    
+    border: 3px solid black;
+    border-radius:10px;
+    position: fixed;
+    bottom: 0 ;
+    height: 15%;
+    width: 70%;
+    background-color: rgba(246, 249, 233, 0.905);
+    justify-content: space-around;
+    display: flex;
+    padding: 1.6%;
+    margin: 2%;
+
+    
+   
+    
+    
+}
+.a{
+    border: 2px solid black;
+    border-radius: 5px;
+    flex: 1;
+    width: 90%;
+    margin:5px auto;
+    
+
+} 
+.b{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    margin:3px ;
+    background-color: rgba(241, 246, 190, 0.846);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
+
+.b:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(224, 227, 182);
+    width: 81%;
+    height: 81%;
+    margin:5px ;
+
+} 
+.fleche{
+    width: 40%;
+    height:auto;
+}
+
+.c{
+    
+    border-radius: 5px;
+    width: 90%;
+    flex: 1;
+    margin:2% ;
+} 
+
+.direction{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(250, 255, 222);
+    width: 10%;
+    height: auto;
+    margin: 10px 10px ;
+    align-items: center;
+    justify-content: center;
+  
+
+    
+
+
+    
+}
+.action{
+    background-color: blanchedalmond;
+    border-radius:15px; 
+    height: auto;
+    width: 20%;
+    margin: 10px 10px ;
+    display: flex;
+    flex-direction: column;
+
+}
+.imgItem{
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.items{
+    background-image: url('fond/—Pngtree—border\ black\ ornate\ pattern_8286039.png');  
+    background-size:100% 100% ;
+    background-position: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 10px ;
+    height: auto;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(129, 161, 161, 0);
+}
+
+.perso{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 90%;
+   flex: 0.4;
+    margin:5px ;
+}
